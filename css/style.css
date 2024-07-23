@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap');
+
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+ul,li{list-style: none;}
+
+a{color: inherit; text-decoration: none;}
+
+
+.section {
+  text-align:center;
+  font-size: 3em;
+  width: 1920px;
+  height: 100vh;
+}
+
+.s1{
+  background: url(../img/Fresia_RGB.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+
+header{
+  width: 1400px;
+  height: 100px;
+  position: fixed; top: 0; left: 50%; transform: translate(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.8s;
+}
+
+
+header .logo{
+  left: 0;
+}
+
+header nav{
+  width: 960px; height: 49px;
+  margin-right: 26px;
+}
+
+header nav .gnb{
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+}
+
+header nav .gnb li{
+  flex: 1;
+  text-align: center;
+}
+
+
+header nav .gnb>li>a{
+  display: inline-block;
+  padding: 10px 20px 0;
+  text-align: center;
+  color: #fff;
+  font-family: "Noto Serif KR", serif;
+  font-size: 20px;
+}
+
+header nav .gnb>li>a::after{
+  content: '';
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+header nav .gnb>li:hover a::after{
+  width: 100%;
+  opacity: 1;
+}
+
+.gnb li .sub{
+  display: flex;
+  flex-direction: column;
+}
+
+.gnb li .sub >li >a{
+  display: block;
+  padding: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+}
+
+.gnb li .sub >li >a:hover{
+  color: #5c5c5c;
+}
+
+.con{
+  width: 550px;
+  height: 500px;
+  top: 480px;
+  left: 243px;
+  position: absolute;
+}
+
+
+.con .txt_box{
+  font-size: 28px;
+  font-family: "Noto Sans KR", sans-serif;
+
+}
+
+.con .txt_box span{
+  font-size: 40px;
+  font-family: "Noto Serif KR", serif;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(64, 84, 127, 0.4);
+}
+
+.con .learn_btn a{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  width: 120px;
+  line-height: 50px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 50px;
+  margin-left: 40%;
+  margin-top: 34px;
+}
+
+.con .learn_btn a:hover{
+  background-color: #fff;
+  color: #5c5c5c;
+}
+.page_2{
+  width: 1920px;
+  height: 100vh;
+  background: url(../img/page2_bg.png) no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+}
+
+.page_2 h2{
+  font-family: "Noto Serif KR", serif;
+  font-size: 36px;
+  margin-right: 1000px;
+
+}
+
+.page_2 .img_wrap{
+  margin-left: 273px;
+  width: 1152px;
+  height: 702px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.page_2 .page2_img{
+  transition: all 0.7s;
+}
+
+.page_2 .img_wrap img{
+  position: absolute;
+  left: 0;
+}
+
+.page_2 .img_wrap .page2_txt{
+  position: absolute;
+  right: 120px;
+  text-align: left;
+  transition: all 0.7s;
+}
+
+.page_2 .img_wrap .page2_txt h3{
+  font-family: "Noto Serif KR", serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #d8c5a0;
+}
+
+.page_2 .img_wrap .page2_txt span{
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 26px;
+  margin-bottom: 171px;
+}
+
+.s3{
+  background: url(../img/page3_bg.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.page3_md{
+  width: 1920px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page3_txt{
+  position: absolute;
+  top: 426px; left: 273px;
+  color: #fff;
+  text-align: left;
+}
+
+.page3_txt h3{
+  font-family: "Noto Serif KR", serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: 0.7s;
+}
+
+.page3_txt p{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 28px;
+  transition: 2.1s;
+}
+
+.page3_vd{
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 302px;
+  right: 247px;
+}
+
+.page3_vd video{
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  width: 1920px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: #3a3a3a;
+}
+
+.f_wrap{
+  display: flex;
+  width: 1400px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.f_wrap h1{
+  position: absolute;
+  bottom: 15px;
+}
+
+.f_wrap span{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  left: 800px;
+  top: 40px;
+  color: #b3b3b3;
+}
+
+.f_wrap .sns{
+  position: absolute;
+  right: 200px;
+  top: 15px;
+}
